@@ -61,11 +61,7 @@ export default function App() {
 
         <br></br>
         <div className="row row-cols-1 row-cols-md-5 g-3">
-          <Forecast city={city} />
-          <Forecast city={city} />
-          <Forecast city={city} />
-          <Forecast city={city} />
-          <Forecast city={city} />
+          
         </div>
         <br></br>
       </div>
