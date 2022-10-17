@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-import Forecast from "./forecast";
+
 import Location from "./location";
 import Today from "./today";
 /*import Search from "./search";*/
