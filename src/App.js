@@ -7,6 +7,7 @@ import Today from "./today";
 /*import Search from "./search";*/
 import Footer from "./footer";
 import { useState } from "react";
+import Forecast from "./forecast";
 
 export default function App() {
   let [city, setCity] = useState("Nicosia");
@@ -61,7 +62,12 @@ export default function App() {
 
         <br></br>
         <div className="row row-cols-1 row-cols-md-5 g-3">
-          
+         <Forecast city={city} />
+         <Forecast city={city} />
+         <Forecast city={city} />
+         <Forecast city={city} />
+         <Forecast city={city} />
+
         </div>
         <br></br>
       </div>
