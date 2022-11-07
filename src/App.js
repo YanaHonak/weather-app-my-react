@@ -10,6 +10,9 @@ import { useState } from "react";
 import Forecast from "./forecast";
 
 export default function App() {
+
+console.log("calledApp");
+
   let [city, setCity] = useState("Nicosia");
   let tmpCity = city;
 
@@ -25,12 +28,14 @@ export default function App() {
 
   function handleCity(e) {
     e.preventDefault();
-    /*console.log(city);*/
+    console.log(city);
     setCity(tmpCity);
   }
 
   return (
+
     <div className="App">
+    
       <div className="container">
         <div className="row row-cols-1 row-cols-md-2 g-3">
           <div className=".col-sm-3">
@@ -49,7 +54,7 @@ export default function App() {
                 <input
                   className="btn btn-outline-primary"
                   type="submit"
-                  onClick={handleCity}
+                 onClick={handleCity}
                 ></input>
               </form>
             </div>
@@ -61,12 +66,9 @@ export default function App() {
         </div>
 
         <br></br>
-        <div className="row row-cols-1 row-cols-md-5 g-3">
+        <div className="row row-cols-1 row-cols-md-6 g-3">
          <Forecast city={city} />
-         <Forecast city={city} />
-         <Forecast city={city} />
-         <Forecast city={city} />
-         <Forecast city={city} />
+       
 
         </div>
         <br></br>
