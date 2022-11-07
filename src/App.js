@@ -2,7 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 
-import Location from "./location";
 import Today from "./today";
 /*import Search from "./search";*/
 import Footer from "./footer";
