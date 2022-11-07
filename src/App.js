@@ -32,6 +32,15 @@ console.log("calledApp");
     setCity(tmpCity);
   }
 
+  const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let dayWeek = daysOfWeek[today.getDay() - 1]
+    /*console.log(dayWeek);*/
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); 
+    let yyyy = today.getFullYear();
+    today = mm + '/' + dd + '/' + yyyy;
   return (
 
     <div className="App">
@@ -39,8 +48,8 @@ console.log("calledApp");
       <div className="container">
         <div className="row row-cols-1 row-cols-md-2 g-3">
           <div className=".col-sm-3">
-            <Location city={city} />
-
+            <h1 id="city">{city}</h1>
+            {dayWeek} {today}
             <div className="card">
               <form className="d-flex" role="search" id="search-form">
                 <input

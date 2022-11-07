@@ -48,7 +48,7 @@ if (loaded)
  return (
   weekForecast.map((day, index)=>{
     if (index<6) {return <ForecastDay id={index} days={day}/>}
-    
+      return null;   
 } 
   ))
    }
